@@ -1,0 +1,197 @@
+/* ... (previous CSS code) ... */
+
+/* Additional Styles for Home Page */
+.python-logo {
+    width: 100px; /* Set the width of your Python logo */
+    height: 100px; /* Set the height of your Python logo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.python-logo1 {
+    background-image: url('http://1.bp.blogspot.com/-GaYskAUb0S4/Vn1OXkULWtI/AAAAAAAABV0/zfPQxnJIKX0/s1600/Python-logo-notext.svg.png'); /* Replace with the path to your second Python logo image */
+    animation: pythonLogoAnimation1 4s linear infinite;
+}
+
+.python-logo2 {
+    background-image: url('http://1.bp.blogspot.com/-GaYskAUb0S4/Vn1OXkULWtI/AAAAAAAABV0/zfPQxnJIKX0/s1600/Python-logo-notext.svg.png'); /* Replace with the path to your second Python logo image */
+    animation: pythonLogoAnimation2 4s linear infinite;
+}
+
+@keyframes pythonLogoAnimation1 {
+    0%, 100% {
+        transform: translateY(-100%);
+    }
+    25%, 75% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(0) translateX(150%);
+    }
+}
+
+@keyframes pythonLogoAnimation2 {
+    0%, 100% {
+        transform: translateY(100%);
+    }
+    25%, 75% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(0) translateX(-150%);
+    }
+}
+
+/* ... (remaining CSS code) ... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('python image.jpg');
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+
+header {
+    background-color:deeppink;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+nav {
+    background-color: #4bdc31;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ad1a81;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 1px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #140dda;
+    color:#fff;
+    
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #140dda;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+    padding-left: 40%;
+}
+
+section:hover {
+    background-color: #e2e2e2;
+    
+}
+
+section:hover h2 {
+    color: #ad1a81;
+}
+
+/* Improved Text Animation */
+@keyframes textAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(1em) rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.text-animation {
+    animation: textAnimation 0.8s ease-in-out;
+
+}
+
+
+
+/* Styles for Video List */
+.vid{
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    padding: 0%;
+    border-radius: 8px;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+#h1{
+    text-align: center;
+    color: #ad1a81;
+    font-size: 20px;
+}
+#div1 .video-list{
+    padding-left: 40%;
+    position: absolute; 
+   
+}
+
+
+/* ... (previous CSS code) ... */
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .course-details,
+    .contact-info {
+        text-align: center;
+    }
+
+    .python-logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    nav a {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    nav a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    nav a {
+        font-size: 1.2em;
+    }
+}
+
+
+
+/* ... (remaining CSS code) ... */
